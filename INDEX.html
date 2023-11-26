@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login - BB Flower Shop</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link href="DESIGN.css" rel="stylesheet" type="text/css">
+ 
+    <script>
+        function login() {
+            var username = document.getElementById("username").value;
+            var password = document.getElementById("password").value;
+ 
+            if (username !== "" && password !== "") {
+                window.location.href = "HOME.html";
+            } else {
+                alert("Please enter both username and password");
+            }
+        }
+    </script>
+</head>
+<body class="login-body">
+    <div id="bg"></div>
+    <div class="login-form">
+        <h2>Login</h2>
+        <form>
+            <label for="username">Username:</label>
+            <input type="text" id="username" required>
+ 
+            <label for="password">Password:</label>
+            <input type="password" id="password" required>
+ 
+            <button type="button" onclick="login()">Login</button>
+        </form>
+    </div>
+</body>
+</html>
+ 
